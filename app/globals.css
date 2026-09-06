@@ -1,26 +1,117 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  color-scheme: dark;
+
+  --background: #140d08;
+  --background-soft: #1b120b;
+  --card: #1f150d;
+  --card-hover: #291b10;
+  --border: #3c2c1c;
+  --border-strong: #513a24;
+  --foreground: #f7ede0;
+  --muted: #b9a891;
+  --muted-soft: #8d7a65;
+  --accent: #f3801f;
+  --accent-dark: #d9660c;
+  --accent-soft: #ffb066;
+  --accent-foreground: #1a0f06;
+
+  --accent-rgb: 243 128 31;
+  --foreground-rgb: 247 237 224;
+  --background-rgb: 20 13 8;
+}
+
+:root.light {
+  color-scheme: light;
+
+  --background: #fdf6ec;
+  --background-soft: #f7ebd6;
+  --card: #ffffff;
+  --card-hover: #fbf1e0;
+  --border: #e7d5b6;
+  --border-strong: #dbc194;
+  --foreground: #2a1a0f;
+  --muted: #6f5a42;
+  --muted-soft: #8c7458;
+  --accent: #e2670f;
+  --accent-dark: #c2550c;
+  --accent-soft: #a94c0a;
+  --accent-foreground: #fffaf2;
+
+  --accent-rgb: 226 103 15;
+  --foreground-rgb: 42 26 15;
+  --background-rgb: 253 246 236;
 }
 
 @theme inline {
   --color-background: var(--background);
+  --color-background-soft: var(--background-soft);
+  --color-card: var(--card);
+  --color-card-hover: var(--card-hover);
+  --color-border: var(--border);
+  --color-border-strong: var(--border-strong);
   --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-muted-soft: var(--muted-soft);
+  --color-accent: var(--accent);
+  --color-accent-dark: var(--accent-dark);
+  --color-accent-soft: var(--accent-soft);
+  --color-accent-foreground: var(--accent-foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  border-color: var(--border);
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+  transition: background-color 0.35s ease, color 0.35s ease;
+  background-image:
+    linear-gradient(rgba(var(--foreground-rgb) / 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(var(--foreground-rgb) / 0.035) 1px, transparent 1px);
+  background-size: 44px 44px;
+  background-position: center top;
+}
+
+::selection {
+  background: rgb(var(--accent-rgb) / 0.35);
+  color: var(--foreground);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-strong);
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+}
+
+.text-gradient-accent {
+  background: linear-gradient(120deg, var(--accent) 0%, var(--accent-soft) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.glow {
+  box-shadow: 0 0 80px 10px rgb(var(--accent-rgb) / 0.18);
+}
+
+.grain-fade {
+  mask-image: radial-gradient(ellipse at center, black 55%, transparent 100%);
 }
