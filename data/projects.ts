@@ -55,6 +55,7 @@ export const projects: Project[] = [
       "Tailwind CSS",
     ],
     githubUrl: "https://github.com/Shashini543/voice-vault",
+    liveUrl: "https://voice-vault-chi.vercel.app",
     image: "/images/projects/voice-vault.png",
   },
   {
