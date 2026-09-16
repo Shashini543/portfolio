@@ -13,6 +13,7 @@ export interface Project {
   technologies: string[];
   githubUrl?: string;
   liveUrl?: string;
+  liveUrlLabel?: string;
   /** Path under /public, e.g. "/images/projects/dms.png". Omit to show a fallback. */
   image?: string;
   /** Set when full case-study details haven't been written up yet. */
@@ -56,6 +57,7 @@ export const projects: Project[] = [
     ],
     githubUrl: "https://github.com/Shashini543/voice-vault",
     liveUrl: "https://voice-vault-chi.vercel.app",
+    liveUrlLabel: "Live",
     image: "/images/projects/voice-vault.png",
   },
   {

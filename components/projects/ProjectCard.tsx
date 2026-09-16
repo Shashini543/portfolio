@@ -92,7 +92,7 @@ export default function ProjectCard({ project }: { project: Project }) {
               className="flex items-center gap-2 rounded-full bg-accent px-5 py-2.5 text-sm font-semibold text-accent-foreground transition-transform hover:scale-105"
             >
               <Play size={16} />
-              Demo
+              {project.liveUrlLabel ?? "Demo"}
             </a>
           )}
         </div>
