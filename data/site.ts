@@ -3,7 +3,7 @@ export const site = {
   firstName: "Shashini",
   lastName: "Bhagya",
   surname: "Wijayamuni",
-  role: "Software Engineering Undergraduate",
+  role: "Information Technology Undergraduate",
   tagline:
     "I enjoy building practical software, exploring new technologies, and turning ideas into meaningful digital experiences.",
   availability: "Available for internship",

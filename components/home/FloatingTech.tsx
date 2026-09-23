@@ -37,16 +37,7 @@ const PARTICLES = [
 export default function FloatingTech() {
   return (
     <div aria-hidden="true" className="pointer-events-none absolute inset-0">
-      <motion.div
-        className="absolute inset-[6%] rounded-full border border-dashed border-accent/25"
-        animate={{ rotate: 360 }}
-        transition={{ duration: 60, repeat: Infinity, ease: "linear" }}
-      />
-      <motion.div
-        className="absolute inset-[14%] rounded-full border border-accent/15"
-        animate={{ rotate: -360 }}
-        transition={{ duration: 80, repeat: Infinity, ease: "linear" }}
-      />
+
 
       {ICONS.map(({ Icon, className, color, duration, delay }, i) => (
         <motion.div

@@ -30,7 +30,6 @@ export const skills: Skill[] = [
   { name: "TypeScript", category: "Languages", badge: "TS", color: "#3b82f6" },
   { name: "JavaScript", category: "Languages", badge: "JS", color: "#f2c94c" },
   { name: "Python", category: "Languages", badge: "Py", color: "#4c9be8" },
-  { name: "PHP", category: "Languages", badge: "PHP", color: "#8b7fd6" },
   { name: "C / C++", category: "Languages", badge: "C++", color: "#a3a8b0" },
 
   // Frontend
@@ -55,6 +54,7 @@ export const skills: Skill[] = [
   { name: "Git", category: "Tools & Platforms", badge: "Git", color: "#e8653a" },
   { name: "GitHub", category: "Tools & Platforms", badge: "Gh", color: "#e8e6e3" },
   { name: "Vercel", category: "Tools & Platforms", badge: "Vc", color: "#e8e6e3" },
+  { name: "Docker", category: "Tools & Platforms", badge: "Dk", color: "#38bdf8" },
 
   // Hardware & Platforms
   { name: "Arduino", category: "Hardware & Platforms", badge: "Ar", color: "#5ac9a3" },

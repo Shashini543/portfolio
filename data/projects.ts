@@ -80,6 +80,7 @@ export const projects: Project[] = [
     ],
     technologies: ["Java 21", "Spring Boot", "REST APIs", "JWT", "TypeScript", "Next.js", "Tailwind CSS", "shadcn/ui", "React Hook Form", "PostgreSQL", "AWS S3", "Apache PDFBox", "Tesseract.js"],
     githubUrl: "https://github.com/Group-CyberX",
+    liveUrl: "https://drive.google.com/drive/folders/1qf4Db3Wl4BEfi1xxcI93v7lAz8DPa1_y",
     image: "/images/projects/universal-dms.png",
   },
   {

@@ -31,7 +31,7 @@ const strengths = [
 
 const stats = [
   { label: "Projects", value: String(projects.length) },
-  { label: "Technologies", value: String(skills.length) },
+  { label: "Technologies", value: "20" },
   { label: "Skill Areas", value: String(skillCategories.length) },
 ];
 
@@ -52,7 +52,7 @@ export default function About() {
             <p className="text-base leading-relaxed text-muted sm:text-lg">
               Third-year Information Technology undergraduate at the University of Moratuwa with
               a strong interest in software engineering and full-stack development. I have
-              hands-on experience with Java, Spring Boot, React, Next.js, PHP, PostgreSQL, and
+              hands-on experience with Java, Spring Boot, React, Next.js, Python, PostgreSQL, and
               Git through academic and team-based projects. I enjoy building practical
               applications, developing backend systems, designing responsive interfaces, and
               working with cloud and embedded technologies. I&rsquo;m passionate about solving

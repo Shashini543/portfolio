@@ -15,7 +15,7 @@ export const education: EducationItem[] = [
     title: "University of Moratuwa",
     subtitle: "B.Sc. (Hons) Information Technology",
     description:
-      "Software Engineering undergraduate. Focused on algorithms, distributed systems, software architecture, and full-stack development.",
+      "IT undergraduate. Focused on algorithms, distributed systems, software architecture, and full-stack development.",
     current: true,
     icon: "graduation",
   },
